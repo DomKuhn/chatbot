@@ -5,7 +5,7 @@
 	<div class="footerIcons">
 
 		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}">
+			<a href="https://facebook.com/{{ site.facebook_username }}" style="color: #3671A0!important">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
@@ -14,7 +14,7 @@
 		{% endif %}
 
 		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
+			<a href="https://twitter.com/{{ site.twitter_username }}" style="color: #3671A0!important">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
@@ -23,7 +23,7 @@
 		{% endif %}
 
 		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
+			<a href="https://github.com/{{ site.github_username }}" style="color: #3671A0!important">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
@@ -32,7 +32,7 @@
 		{% endif %}
 
 		{% if site.email_address %}
-			<a href="mailto:{{ site.email_address }}">
+			<a href="mailto:{{ site.email_address }}" style="color: #3671A0!important">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
@@ -43,10 +43,10 @@
 	</div>
 	<div class="footerLinks">
 		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+			<a href="{{ page.url | relative_url }}" target="_self" style="color: #3671A0!important">{{ page.title }}</a>
 		{% endfor %}
 		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
+			<a href="{{ site.presskit_download_link }}" style="color: #3671A0!important">Press Kit</a>
 		{% endif %}
 	</div>
 </footer>
